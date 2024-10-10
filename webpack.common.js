@@ -11,7 +11,14 @@ module.exports = {
     output: {
         filename: "timeline.js",
         path: path.join(output_path, 'js'),
-        library: "TL" // https://webpack.js.org/configuration/output/#outputlibrary
+        library: {
+            type: "module"
+        },
+        // libraryTarget: "module", // https://webpack.js.org/configuration/output/#outputlibrarytarget
+        // library: "TL" // https://webpack.js.org/configuration/output/#outputlibrary
+    },
+    experiments: {
+        outputModule: true, // This is required for Webpack to output ESM bundles
     },
     plugins: [
         new CopyPlugin({

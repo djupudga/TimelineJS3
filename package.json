@@ -1,5 +1,5 @@
 {
-    "name": "@knight-lab/timelinejs",
+    "name": "timelinejs",
     "version": "3.9.3",
     "license": "MPL-2.0",
     "description": "TimelineJS v3: A Storytelling Timeline built in JavaScript, made by Northwestern University Knight Lab.",
@@ -7,6 +7,13 @@
         "dompurify": "^2.2.7",
         "wicg-inert": "^3.1.2"
     },
+    "main": "dist/js/timeline.js",
+    "module": "dist/js/timeline.js",
+    "style": "dist/css/timeline.css",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
     "devDependencies": {
         "@babel/cli": "^7.14.3",
         "@babel/core": "^7.10.2",
@@ -22,7 +29,7 @@
         "http-server": "^14.1.0",
         "jest": "^28.1.0",
         "jest-environment-jsdom": "^29.0.1",
-        "less": "^3.11.3",
+        "less": "^3.13.1",
         "less-loader": "^6.1.1",
         "lodash": "^4.17.21",
         "mini-css-extract-plugin": "^2.6.0",
@@ -31,6 +38,7 @@
         "simple-git": "^3.7.1",
         "style-loader": "^1.2.1",
         "trash-cli": "^5.0.0",
+        "vite": "^5.4.8",
         "webpack": "^5.72.1",
         "webpack-cli": "^4.9.2",
         "webpack-dev-server": "^4.9.0",
